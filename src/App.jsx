@@ -168,7 +168,7 @@ export default function App() {
           <div className="desktop-actions">
             <a href="tel:+94777310724" className="btn btn-primary small-btn">
               <Phone size={16} />
-              +94 77 731 0724
+              0777 310 724
             </a>
           </div>
 
