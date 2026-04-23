@@ -146,6 +146,58 @@ export default function App() {
   const year = useMemo(() => new Date().getFullYear(), [])
 
   return (
+     <div>
+      <section
+        style={{
+          height: "100vh",
+          backgroundImage: 'url("/images/cover.jpg")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          textAlign: "center",
+          color: "white",
+          position: "relative",
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "rgba(0,0,0,0.35)",
+          }}
+        ></div>
+
+        <div
+          style={{
+            position: "relative",
+            zIndex: 1,
+            padding: "20px",
+          }}
+        >
+          <h1 style={{ fontSize: "48px", marginBottom: "16px" }}>
+            Welcome to AR Homes
+          </h1>
+          <p style={{ fontSize: "20px", marginBottom: "24px" }}>
+            Modern homes built with trust and quality in Gampola.
+          </p>
+          <a
+            href="#contact"
+            style={{
+              background: "#0d6efd",
+              color: "white",
+              padding: "12px 24px",
+              borderRadius: "8px",
+              textDecoration: "none",
+            }}
+          >
+            Contact Us
+          </a>
+        </div>
+      </section>
+    </div>
     <div>
       <header className="site-header">
         <div className="container nav-row">
